@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./story.css">
+        <script type="text/javascript" src="./jquery-2.2.2.min.js"></script>
+        <script type="text/javascript" src="./story.js"></script>
+    </head>
+    <body>
+        <div id="Story">
+            <div id="Inventory"></div>
+            <div id="Ending0">
+                <img src="./pics/2.jpg" alt="ending 0" />
+                <p>You were eaten by Squidward</p>
+                <p>ENDING 0</p>
+            </div>
+            <div id="Ending1">
+                <img src="./pics/9.jpg" alt="ending 1" />
+                <p>Turns out Squidward turned into a ghost.  You and Patrick became his slaves.</p>
+                <p>ENDING 1</p>
+            </div>
+            <div id="Ending2">
+                <img src="./pics/10.jpg" alt="ending 3" />
+                <p>Because of Squidward making you late to work.  You were fired from the Krabby Patty.</p>
+                <p>Well, you decided to go to college and major in Computer Science.</p>
+                <p>You look really stressed out right now.  Maybe finals will cheer you up.  Good luck.</p>
+                <p>ENDING 2</p>
+            </div>
+            <div id="State0">
+                <img src="./pics/0.png" alt="state 0" />
+                <p>You realized you're going to be late for work after playing too much hooky.  Go get ready.  Fry cooks have never been late.  Don't be the first one."</p>
+                <p><input type="submit" name="0a" id="0a" value="Go get ready"></p> <!-- to State 1--> 
+                <p><input type="submit" name="0b" id="0b" value="Just waste time and doodle.  Who cares about life?"></p>  <!-- to State 2--> 
+            </div>
+            <div id="State1">
+                <img src="./pics/3.png" alt="state 1" />
+                <p>A wild Squidward breaks into your home.  He asks for a pencil to write on his paper.  What will you do?</p>
+                <p><input type="submit" name="1a" id="1a" value="Give him a pencil"></p> <!-- to State 3/11--> 
+                <p><input type="submit" name="1b" id="1b" value="Call the cops"></p> <!-- to State 12--> 
+            </div>
+            <div id="State2">
+                <img src="./pics/6.png" alt="state 2" />
+                <p>You found a pencil and hammered away at your desk, writing up a storm of an essay.</p>
+                <p><input type="submit" name="2a" id="2a" value="Continue smashing that pencil"></p> <!-- to State 4--> 
+            </div>
+            <div id="State3">
+                <img src="./pics/15.jpg" alt="state 3" />
+                <p>You gave him your pencil.  "Pencil" was removed from your inventory.</p>
+                <p>"Hehe...thanks Spongebob..." said Squidward.  He walks away towards your front door, seemingly satisfied.</p>
+                <p><input type="submit" name="3a" id="3a" value="Continue"></p> <!-- to State 5--> 
+            </div>
+            <div id="State4">
+                <img src="./pics/7.jpg" alt="state 4" />
+                <p>Pretty impressed by your essay.  You took your pencil with you and decided to get ready for work finally.</p>
+                <p>"Pencil" was received into your inventory</p>
+                <p><input type="submit" name="4a" id="4a" value="Conitue to get ready"></p><!-- to State 1-->
+            </div>
+            <div id="State5">
+                <img src="./pics/8.jpg" alt="state 5" />
+                <p>Creeped out by Squidward, you walk as fast as you can.  However, he appears before you and boarded up the front door.  That's the only way out.</p>
+                <p>"On second thought Spongebob...I'm pretty hungry...give me food..." He said.</p>
+                <p><input type="submit" name="5a" id="5a" value="Search for food for Squidward"></p> <!-- to State 6--> 
+                <p><input type="submit" name="5b" id="5b" value="Refuse and demand Squidward to open the door"></p> <!-- to State 10--> 
+            </div>
+            <div id="State6">
+                <img src="./pics/13.jpg" alt="state 6" />
+                <p>You tell him to wait right there while you look for something in the kitchen</p>
+                <p>Where should you look?</p>
+                <p><input type="submit" name="6a" id="6a" value="Look in the fridge."></p> <!-- to State 7--> 
+                <p><input type="submit" name="6b" id="6b" value="Look for something on the counter"></p> <!-- to State 8--> 
+            </div>
+            <div id="State7">
+                <img src="./pics/11.jpg" alt="state 7" />
+                <p>The Aqua Bread catches your eye.  Will you give it to Squidward?</p>
+                <p>Where should you look?</p>
+                <p><input type="submit" name="7a" id="7a" value="Yes.  Put Aqua Bread into your inventory"></p> <!-- to State 9--> 
+                <p><input type="submit" name="7b" id="7b" value="No.  Look for something on the counter"></p> <!-- to State 8--> 
+            </div>
+            <div id="State8">
+                <img src="./pics/12.jpg" alt="state 8" />
+                <p>You see the sundae that you made on a whim.  The stench goes through your pores.  Will you give it to Squidward?</p>
+                <p><input type="submit" name="8a" id="8a" value="Yes. Put Sundae into your inventory"></p> <!-- to State 9--> 
+                <p><input type="submit" name="8b" id="8b" value="No.  Look in the fridge"></p> <!-- to State 7--> 
+            </div>
+            <div id="State9">
+                <img src="./pics/8.jpg" alt="state 9" />
+                <p>You see Squidward waiting at the boarded front door.</p>
+                 <p><input type="submit" name="9a" id="9a" value="Give him your food"></p> <!-- to State 13/14--> 
+            </div>
+            <div id="State10">
+                <img src="./pics/5.jpg" alt="state 10" />
+                <p>"...I wasn't asking...oh well...sponges tastes pretty good too..." said Squidward disappointedly.</p>
+                <p><input type="submit" name="10a" id="10a" value="Continue"></p> <!-- to State 6--> 
+            </div>
+            <div id="State11">
+                <img src="./pics/5.jpg" alt="state 11" />
+                <p>You lied that you had a pencil</p>
+                <p>"You know I hate liars Spongebob..." said Squidward.  He approaches closer towards you.</p>
+                <p><input type="submit" name="11a" id="11a" value="Continue to Ending 0"></p> <!-- to Ending 0-->
+            </div>
+            <div id="State12">
+                <img src="./pics/5.jpg" alt="state 12" />
+                <p>You tried to call the cops, but was stopped by Squidward</p>
+                <p>"I can't have you doing that Spongebob..." said Squidward.  He approaches closer towards you.</p>
+                <p><input type="submit" name="12a" id="12a" value="Continue to Ending 0"></p> <!-- to Ending 0-->
+            </div>
+            <div id="State13">
+                <img src="./pics/14.gif" alt="state 13" />
+                <p>Squidward eats the Aqua Bread.  You didn't realize there was mold in it until just now.  Squidward became very sick and couldn't move.  You took this chance unboard the front door and run away.</p>
+                <p>Unfortunately, Squidward did not make it.</p>
+                <p><input type="submit" name="13a" id="13a" value="Continue to Ending 1"></p> <!-- to Ending 1-->
+            </div>
+            <div id="State14">
+                <img src="./pics/14.gif" alt="state 14" />
+                <p>Squidward eats the Sundae.  He's back to his usual self.  He unboards the door and goes to work.  You also go to work.</p>
+                <p><input type="submit" name="14a" id="14a" value="Continue to Ending 2"></p> <!-- to Ending 2-->
+            </div>
+        </div>
+        <div id="items">
+            <p id="list">Obtained Item(s): Empty</p>
+        </div>
+    </body>
+</html>

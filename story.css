@@ -1,0 +1,25 @@
+#State1{display:none;}
+#State2{display:none;}
+#State3{display:none;}
+#State4{display:none;}
+#State5{display:none;}
+#State6{display:none;}
+#State7{display:none;}
+#State8{display:none;}
+#State9{display:none;}
+#State10{display:none;}
+#State11{display:none;}
+#State12{display:none;}
+#State13{display:none;}
+#State14{display:none;}
+#Ending0{display:none;}
+#Ending1{display:none;}
+#Ending2{display:none;}
+#Ending3{display:none;}
+html{
+    background-color: grey;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
