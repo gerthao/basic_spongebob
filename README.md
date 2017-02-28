@@ -1,2 +1,2 @@
 # basic_spongebob
-A basic example of using HTML and JQuery for my Rich Internet Applications course.  Has Spongebob in it and pictures from the internet.
+A basic Pick-A-Path example of using HTML/CSS/JavaScript with jQuery for my Rich Internet Applications course.  Uses 15 states and hides and shows whatever the current state the user is in.
